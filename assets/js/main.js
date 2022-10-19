@@ -56,18 +56,23 @@ for (let index = 0; index < randomNumbers.length; index++) {
     liElement.append(element)
 }  
 
-id = setInterval(function(){  
+id = setInterval(function(){
     timerElement.innerHTML = seconds
     seconds--
-    if (seconds === 0) {
+    if (seconds < 0) {
             setInterval(function(){
             clearInterval(id)
             timerElement.classList.add("hide")
             const test = document.querySelector("ul")
             test.classList.add("hide")
+            for (let index = 0; index < 5; index++) {
+                prompt("inserisci, uno alla volta, i numeri che hai visto precedentemente")
+            }
         },1000)
     }
 }, 1000)
+
+
 
 
 
