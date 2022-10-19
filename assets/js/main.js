@@ -55,7 +55,7 @@ let prompts
 
 let id
 
-let seconds = 4
+let seconds = 30  // <--- cambiare i secondi del gioco
 
 
     id = setInterval(function () {
