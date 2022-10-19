@@ -1,3 +1,7 @@
 body{
     background-color: palevioletred;
 }
+
+.hide{
+    display: none;
+}
