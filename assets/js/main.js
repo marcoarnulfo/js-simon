@@ -82,10 +82,8 @@ const results = document.querySelector("h2")
 function promptsCicle(min, max) {
     for (let index = min; index < max; index++) {
         const userNumbers = Number(prompt("inserisci numero"))
-        if(!userNumberChoise.includes(userNumbers)){
-            userNumberChoise.push(userNumbers)
+            userNumberChoise.push(userNumbers);
             console.log(userNumberChoise);
-        }
     }
     for (let index = 0; index < randomNumbers.length; index++) {
         const element = randomNumbers[index];
